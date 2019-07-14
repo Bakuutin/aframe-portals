@@ -3,6 +3,10 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 
+import 'aframe';
+import 'aframe-environment-component';
+import './portals';
+
 Vue.config.productionTip = false;
 
 new Vue({
