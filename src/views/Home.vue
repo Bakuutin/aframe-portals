@@ -1,14 +1,29 @@
 <template>
   <a-entity>
-    <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-    <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E" portal="path:/about;location: 10 10 0"></a-sphere>
+    <a-sphere
+      animation="property: rotation; easing: linear; to: 0 360 0; from: 0 0 0; loop: true; dur: 10000"
+      position="3 1.25 -5" radius="1.25" color="white"
+      material="src: /2k_earth_daymap.jpg"
+      portal="path:/about">
+      <a-text position="0 1.7 0" side="double" align="center" color="white" scale="4 4 4" value="Info"></a-text>
+    </a-sphere>
+
+    <BoxPortal text="Up" color="red" scale="2 2 2" position="-6 1 -7" rotation="0 45 0" target-location="0 10 0"></BoxPortal>
+    <BoxPortal text="Down" color="blue" scale="2 2 2" position="-6 12 -7" rotation="0 45 0" target-location="0 0 0"></BoxPortal>
+
+    <a-entity environment="preset: tron"></a-entity>
   </a-entity>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+import BoxPortal from '@/components/BoxPortal.vue';
 
-@Component
+@Component({
+  components: {
+    BoxPortal,
+  },
+})
 export default class Home extends Vue {
   mounted() {
     console.log('Welcome home', this);

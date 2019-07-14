@@ -3,7 +3,6 @@
     <a-scene>
       <UserCamera/>
       <router-view/>
-      <a-entity environment="preset: tron"></a-entity>
     </a-scene>
   </div>
 </template>

@@ -5,7 +5,8 @@
         cursor="fuse: true; fuseTimeout: 200"
         position="0 0 -1"
         geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
-        material="color: black; shader: flat">
+        visible="false"
+      >
       </a-entity>
     </a-entity>
   </a-entity>
