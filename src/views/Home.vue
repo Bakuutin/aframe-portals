@@ -3,7 +3,7 @@
     <a-sphere
       animation="property: rotation; easing: linear; to: 0 360 0; from: 0 0 0; loop: true; dur: 10000"
       position="3 1.25 -5" radius="1.25" color="white"
-      material="src: /2k_earth_daymap.jpg"
+      material="src: 2k_earth_daymap.jpg"
       portal="path:/about">
       <a-text position="0 1.7 0" side="double" align="center" color="white" scale="4 4 4" value="Info"></a-text>
     </a-sphere>
