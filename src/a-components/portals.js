@@ -1,6 +1,6 @@
 import { isEmpty } from 'lodash';
 
-import router from './router';
+import router from '../router';
 
 AFRAME.registerComponent('portal', {
   dependencies: ['geometry'],

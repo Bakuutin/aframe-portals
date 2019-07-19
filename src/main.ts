@@ -5,7 +5,9 @@ import store from './store';
 
 import 'aframe';
 import 'aframe-environment-component';
-import './portals';
+import 'aframe-extras';
+import './a-components/portals';
+import './a-components/store';
 
 Vue.config.productionTip = false;
 

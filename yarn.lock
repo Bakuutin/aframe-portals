@@ -1284,6 +1284,13 @@ aframe-environment-component@^2.0.0:
   resolved "https://registry.yarnpkg.com/aframe-environment-component/-/aframe-environment-component-2.0.0.tgz#051e28d1acf907df9a7c1cfff8aecf8465eac45e"
   integrity sha512-Z1Qyefbp0tPK+CM4CoUU0X66IRdYsfHlvA8qVQkbRUCjd8W9CsSRkXKRMhDZl2tfGZOvfvdYgcqV3YLTkbW75Q==
 
+aframe-extras@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/aframe-extras/-/aframe-extras-6.0.0.tgz#23e4f263acfa0f815f2aedf7202548203075712b"
+  integrity sha512-5kzNWFW9Qm47ANAf9gh7QkB60JGANt7A8ot3Axgloobdt8N+rp+OvnaNXViIihNQ04y2SV1qXICzTOjTrrzBgQ==
+  dependencies:
+    three-pathfinding "^0.7.0"
+
 aframe@^0.9.2:
   version "0.9.2"
   resolved "https://registry.yarnpkg.com/aframe/-/aframe-0.9.2.tgz#2f5c61d3bf7082ba9605b367b7992fe71e8dd64e"
@@ -8652,6 +8659,11 @@ three-buffer-vertex-data@^1.0.0:
   integrity sha1-zyKOeEJ2ZYhLlhpMq+H4XtOfgrE=
   dependencies:
     flatten-vertex-data "^1.0.0"
+
+three-pathfinding@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/three-pathfinding/-/three-pathfinding-0.7.0.tgz#bf64ec409bee6e7d8e19be96c7b40ebd7ef6f10d"
+  integrity sha512-UwWvzgio1UFe81n5jKHNzB4B+AG3wfZ54OKp7bTb1MHuC3cy6RTtr0dbbiPQQoqxzr+DRArR2DUwQSEknw5+nw==
 
 through2@0.6.x:
   version "0.6.5"
