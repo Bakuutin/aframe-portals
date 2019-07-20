@@ -13,10 +13,13 @@ AFRAME.registerComponent('portal', {
       default: '/',
     },
   },
-  isCameraInPortal() {
+  isInside(el, bound) {
     const cameraPosition = new THREE.Vector3();
-    document.querySelector('#camera').object3D.getWorldPosition(cameraPosition);
+    el.object3D.getWorldPosition(cameraPosition);
 
+    return bound.containsPoint(cameraPosition);
+  },
+  isActivated() {
     let portalBound;
 
     if (this.el.components.geometry.data.primitive === 'sphere') {
@@ -30,7 +33,9 @@ AFRAME.registerComponent('portal', {
       portalBound = new THREE.Box3().setFromObject(this.el.getObject3D('mesh'));
     }
 
-    return portalBound.containsPoint(cameraPosition);
+    return Array.from(document.querySelectorAll('.portal-activator'))
+      .filter(el => this.isInside(el, portalBound))
+      .length > 0;
   },
   teleport() {
     if (this.data.path) {
@@ -42,7 +47,7 @@ AFRAME.registerComponent('portal', {
     }
   },
   tick() {
-    if (this.isCameraInPortal()) {
+    if (this.isActivated()) {
       this.teleport();
     }
   },

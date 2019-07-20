@@ -16,6 +16,6 @@ AFRAME.registerComponent('store-position', {
   getPosition() {
     const position = new THREE.Vector3();
     this.el.object3D.getWorldPosition(position);
-    return {...position };
+    return { ...position };
   },
 });

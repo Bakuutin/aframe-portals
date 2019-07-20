@@ -1,8 +1,13 @@
 <template>
   <div id="app">
-    <a-scene>
+    <a-scene fog="color:black">
       <UserCamera/>
       <router-view/>
+
+      <a-sky color="black"></a-sky>
+
+      <!-- <a-entity position="-1 1 0" light="type: directional; color: white; intensity: 1"></a-entity> -->
+      <a-entity light="type: ambient; color: #999"></a-entity>
     </a-scene>
   </div>
 </template>
