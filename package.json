@@ -12,7 +12,7 @@
     "aframe-environment-component": "^2.0.0",
     "aframe-extras": "^6.0.0",
     "core-js": "^2.6.5",
-    "lodash": "^4.17.14",
+    "lodash": "^4.17.21",
     "vue": "^2.6.10",
     "vue-class-component": "^7.0.2",
     "vue-property-decorator": "^8.1.0",
